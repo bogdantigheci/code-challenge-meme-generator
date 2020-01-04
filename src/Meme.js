@@ -39,7 +39,13 @@ class Meme extends Component {
   render() {
     return (
       <div>
-        <canvas ref="canvas" id="canvas" width={640} height={425} />
+        <canvas
+          ref="canvas"
+          id="canvas"
+          width={800}
+          height={600}
+          style={{ maxWidth: "460px" }}
+        />
         <img
           crossOrigin="anonymous"
           ref="image"
@@ -49,22 +55,22 @@ class Meme extends Component {
         />
         <div>
           <button
-            className="btn btn-primary mx-1"
+            className="btn btn-primary mx-1 downbtn"
             onClick={this.handleDownloadPng}
           >
-            Download Png
+            Png
           </button>
           <button
-            className="btn btn-primary mx-1"
+            className="btn btn-primary mx-1 downbtn"
             onClick={this.handleDownloadJpg}
           >
-            Download Jpg
+            Jpg
           </button>
           <button
-            className="btn btn-primary mx-1"
+            className="btn btn-primary mx-1 downbtn"
             onClick={this.handleDownloadGif}
           >
-            Download Gif
+            Gif
           </button>
         </div>
       </div>

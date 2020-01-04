@@ -1,6 +1,6 @@
 # Task Result
 
-## Eingesetzte Technologien / Frameworks
+## Technologies / Frameworks
 
 I use the following technologies / frameworks in my project:
 
@@ -13,13 +13,12 @@ The downside of using React from my point of view is that you have to use some/a
 
 ## Used 3rd Party Libraries
 
-I use the following 3rd party libraries in my project: (if none, remove the table and explain why)
-
-| Name                                                    | Reason                                            |
+I use the following 3rd party libraries in my project:
+| Name | Reason |
 | ------------------------------------------------------- | ------------------------------------------------- |
-| [axios](https://www.npmjs.com/package/axios)            | To fetch meme images from imgflip API.            |
-| [Bootstrap](https://getbootstrap.com/)                  | Simple RWD framework for designing the front end. |
-| [react-router](https://reacttraining.com/react-router/) | For navigation.                                   |
+| [axios](https://www.npmjs.com/package/axios) | To fetch meme images from imgflip API. |
+| [Bootstrap](https://getbootstrap.com/) | Simple RWD framework for designing the front end. |
+| [react-router](https://reacttraining.com/react-router/) | For navigation. |
 
 ## Installation / Run
 

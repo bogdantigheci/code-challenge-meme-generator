@@ -44,3 +44,7 @@ input {
   display: block;
   width: 100%;
 }
+
+.downbtn {
+  width: 31%;
+}
