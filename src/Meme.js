@@ -9,6 +9,7 @@ class Meme extends Component {
     img.onload = () => {
       ctx.drawImage(img, 0, 0);
       ctx.font = "40px Courier";
+      ctx.fillStyle = "rgb(255, 255, 255)";
       ctx.fillText(this.props.topText, 5, 100);
       ctx.fillText(this.props.bottomText, 5, 300);
     };
@@ -70,6 +71,5 @@ class Meme extends Component {
     );
   }
 }
-
 
 export default Meme;

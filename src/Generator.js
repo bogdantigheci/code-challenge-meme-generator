@@ -81,7 +81,7 @@ class Generator extends Component {
         </form>
         <div className="thumbnail text-center">
           <img
-            id="imgg"
+            id="meme-img"
             src={this.state.randomMeme}
             alt=""
             className="mx-auto d-block"
@@ -100,6 +100,5 @@ class Generator extends Component {
     );
   }
 }
-
 
 export default Generator;
