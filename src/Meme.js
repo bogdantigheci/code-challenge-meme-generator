@@ -14,22 +14,23 @@ class Meme extends Component {
       ctx.fillText(this.props.bottomText, 5, 300);
     };
   }
+
   handleDownloadPng = () => {
-    var canvas = document.getElementById("canvas");
+    var canvas = document.getElementById(`canvas${this.props.id}`);
     var link = document.createElement("a");
     link.download = "meme.png";
     link.href = canvas.toDataURL("image/png");
     link.click();
   };
   handleDownloadJpg = () => {
-    var canvas = document.getElementById("canvas");
+    var canvas = document.getElementById(`canvas${this.props.id}`);
     var link = document.createElement("a");
     link.download = "meme.jpg";
     link.href = canvas.toDataURL("image/jpg");
     link.click();
   };
   handleDownloadGif = () => {
-    var canvas = document.getElementById("canvas");
+    var canvas = document.getElementById(`canvas${this.props.id}`);
     var link = document.createElement("a");
     link.download = "meme.gif";
     link.href = canvas.toDataURL("image/gif");
@@ -37,11 +38,12 @@ class Meme extends Component {
   };
 
   render() {
+    console.log("##########", this.props.id);
     return (
       <div>
         <canvas
           ref="canvas"
-          id="canvas"
+          id={`canvas${this.props.id}`}
           width={800}
           height={600}
           style={{ maxWidth: "460px" }}

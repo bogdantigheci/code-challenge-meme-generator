@@ -6,6 +6,7 @@ const MyMemes = props => (
     {props.myMemes.map((meme, i) => (
       <Meme
         key={i}
+        id={i}
         url={meme.url}
         topText={meme.topText}
         bottomText={meme.bottomText}
