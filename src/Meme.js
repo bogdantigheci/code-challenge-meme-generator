@@ -38,7 +38,6 @@ class Meme extends Component {
   };
 
   render() {
-    console.log("##########", this.props.id);
     return (
       <div>
         <canvas
